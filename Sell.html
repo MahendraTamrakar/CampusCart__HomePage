@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Product</title>
+  <link rel="stylesheet" href="CSS/sell.css">
+</head>
+<body>
+  <div class="container">
+    <center><img class="logo-img" src="Images/logo1.png" alt=""></center>
+    <h1>Sell Your Product</h1>
+    <form id="sellForm">
+      <label for="productName">Product Name:</label>
+      <input type="text" id="productName" name="productName" placeholder="Enter product name" required>
+
+      <label for="productBrand">Brand Name:</label>
+      <input type="text" id="productBrand" name="productBrand" placeholder="Enter the name of the brand" required>
+
+      <label for="productDescription">Description:</label>
+      <textarea id="productDescription" name="productDescription" placeholder="Enter product description" rows="4" required></textarea>
+
+      <label for="productPrice">Price (in ₹):</label>
+      <input type="number" id="productPrice" name="productPrice" min="1" placeholder="Enter price" required>
+
+      <label for="productImage">Upload Product Images:</label>
+      <input type="file" id="productImage" name="productImage" accept="image/*" multiple required>
+
+      <!-- <label>Stock Quantity:</label>
+      <div class="stock-container">
+        <button type="button" id="decreaseStock">-</button>
+        <input type="number" id="stockQuantity" name="stockQuantity" value="1" min="1">
+        <button type="button" id="increaseStock">+</button>
+      </div> -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-image: url("/Images/chat.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-img {
+    width: 360px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border: 1px solid rgba(199, 190, 190, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 800px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #2d3436;
+    outline: none;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: white;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #0984e3;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  button {
+    background-color: #0984e3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #1887f5;
+  }
+  
+  .stock-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stock-container input {
+    width: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .stock-container button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
